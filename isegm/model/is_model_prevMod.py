@@ -82,18 +82,6 @@ class ISModel_prevMod(nn.Module):
 
         return coord_features
 
-    def get_last_point(self, points):
-        last_point = torch.zeros((points.shape[0], 1, 4), device=points.device, dtype=points.dtype)
-        last_point[:, 0, :3] = points[points[:, :, -1] == points[:, :, -1].max(dim=1)[0].unsqueeze(1)]
-        last_point[:, 0, -1][
-            torch.argwhere(points[:, :, -1] == points[:, :, -1].max(dim=1)[0].unsqueeze(1))[:, -1] < points.shape[
-                1] // 2] = 1
-        last_point[:, 0, -1][
-            torch.argwhere(points[:, :, -1] == points[:, :, -1].max(dim=1)[0].unsqueeze(1))[:, -1] >= points.shape[
-                1] // 2] = 0
-
-        return last_point
-
 
 
 class XConvBnRelu2(nn.Module):
