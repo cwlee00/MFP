@@ -1,0 +1,26 @@
+INTERACTIVE_MODELS_PATH: "./weights"
+EXPS_PATH: "/media/cwlee/HDD1/Projects/MFP_results"
+
+# Evaluation datasets
+GRABCUT_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/GrabCut"
+BERKELEY_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/Berkeley"
+DAVIS_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/DAVIS"
+DAVIS_SUBSET_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/DAVIS_subset"
+COCO_MVAL_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_MVal"
+
+# Train datasets
+SBD_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/SBD"
+COCO_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_LVIS"
+LVIS_v1_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_LVIS"
+PASCALVOC_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/PascalVOC"
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+IMAGENET_PRETRAINED_MODELS:
+  HRNETV2_W18: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/hrnetv2_w18_imagenet_pretrained.pth"
+  HRNETV2_W32: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/hrnetv2_w32_imagenet_pretrained.pth"
+  MIT_B0: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/mit_b0.pth"
+  MAE_BASE: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/mae_pretrain_vit_base.pth"
+
+PRETRAINED_SIMPLECLICK_MODELS:
+  MAE_BASE: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/mae_pretrain_vit_base.pth"
