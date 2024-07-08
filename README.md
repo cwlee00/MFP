@@ -49,11 +49,13 @@ python train.py models/iter_mask/plainvit_base448_cocolvis_itermask_prevMod.py \
 ### Citation
 Please cite the following paper if you feel this repository useful.
 ```bibtex
-    @inproceedings{lee2024mfp,
-        author    = {Lee, Chaewon and Lee, Seon-Ho and Kim, Chang-Su}, 
-        title     = {MFP: Making Full Use of Probability Maps for Interactive Image Segmentation}, 
-        booktitle = {Computer Vision and Pattern Recognition},
-        year      = {2024}
+    @InProceedings{Lee_2024_CVPR,
+    author    = {Lee, Chaewon and Lee, Seon-Ho and Kim, Chang-Su},
+    title     = {MFP: Making Full Use of Probability Maps for Interactive Image Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {4051-4059}
     }
 ```
 ### Acknowledgement
